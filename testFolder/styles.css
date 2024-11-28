@@ -1,0 +1,215 @@
+/* стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #121212; 
+    color: #eaeaea; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #8cffba; 
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #57ff93;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-content {
+    max-width: 800px; 
+    margin: 0 auto;   
+    text-align: left; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333; 
+    color: #8cffba; 
+    border: 2px solid #8cffba; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444; 
+    color: #57ff93; 
+    border-color: #57ff93; 
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 24, 24, 0.9); 
+    padding: 10px 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0 20px;
+    font-size: 18px;
+    color: #8cffba;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #57ff93;
+}
+
+/* "О нас" */
+.about-section {
+    background: #111; 
+    padding: 60px 0; 
+    color: #eaeaea;
+}
+
+.team-members {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    justify-content: center; 
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.member img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+
+.member h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.member p {
+    text-align: center; 
+}
+
+
+.member h2:hover,
+.member p:hover {
+    color: #57ff93; 
+    transition: all 0.3s;
+}
+
+/* "Проекты" */
+.projects-section {
+    padding: 50px 0; 
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-section::before {
+    content: ''; 
+}
+
+.project-list {
+    list-style-type: none;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+.project-item h2 {
+    margin: 10px 0 5px;
+}
+
+/* "Контакты" */
+.contact-section {
+    background: #202020; 
+    padding: 50px 0;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    outline: none;
+    background: #333; 
+    color: #eaeaea; 
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333; 
+    color: #8cffba; 
+    border: 2px solid #8cffba; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #444; 
+    color: #57ff93; 
+    border-color: #57ff93; 
+}
